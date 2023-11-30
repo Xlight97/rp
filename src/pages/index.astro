@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import { Image } from "astro:assets"
+import { Image } from "astro:assets";
 
 import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
@@ -48,7 +48,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       </div>
     </article>
 
-    <article class="flex flex-col gap-8">
+    <!-- <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">Latest posts</h3>
         <Link href="/posts" label="See all posts" isUnderline target="_self" />
@@ -70,7 +70,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
               ))
         }
       </section>
-    </article>
+    </article> -->
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
